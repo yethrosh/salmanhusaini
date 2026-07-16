@@ -3,77 +3,169 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Salman Husaini</title>
+<title>مولانا سلمان حسینی ندویؒ</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin: 0;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
+    min-height: 100vh;
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     text-align: center;
     font-family: "Noto Nastaliq Urdu", serif;
+
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.82),
+            rgba(30, 41, 59, 0.82)
+        ),
+        url('sketch12.jpg');
+
+    background-color: #0f172a;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 42%;
 }
 
 .container {
-    padding: 40px;
     max-width: 700px;
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 30px;
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 42px;
-    font-weight: bold;
+    padding: 40px;
+    z-index: 1;
 }
 
 h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
+    margin: 0;
+    font-size: 58px;
+    line-height: 1.5;
+    color: #d4af6a;
+    font-weight: 700;
+}
+
+.ornament,
+.ornament-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 28px 0;
+}
+
+.ornament::before,
+.ornament::after,
+.ornament-bottom::before,
+.ornament-bottom::after {
+    content: "";
+    width: 150px;
+    height: 1px;
+    background: rgba(212, 175, 106, 0.45);
+}
+
+.ornament svg,
+.ornament-bottom svg {
+    width: 42px;
+    height: 22px;
+    fill: #d4af6a;
 }
 
 p {
-    font-size: 24px;
-    color: #d1d5db;
-    line-height: 2;
+    margin: 0;
+    font-size: 28px;
+    line-height: 2.2;
+    color: #e5e7eb;
 }
 
 .domain {
-    margin-top: 40px;
-    font-size: 18px;
-    color: #94a3b8;
+    margin-top: 0;
+    font-size: 24px;
+    color: #d4af6a;
     direction: ltr;
+    letter-spacing: 4px;
+}
+
+/* موبائل کے لیے */
+@media (max-width: 768px) {
+    body {
+        background-position: top center;
+        background-size: 65%;
+    }
+
+    .container {
+        padding: 25px;
+        margin-top: 220px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    .domain {
+        font-size: 20px;
+    }
+
+    .ornament::before,
+    .ornament::after,
+    .ornament-bottom::before,
+    .ornament-bottom::after {
+        width: 80px;
+    }
 }
 </style>
 </head>
 
 <body>
+
 <div class="container">
 
-    <div class="logo">S</div>
+    <h1>مولانا سلمان حسینی ندویؒ</h1>
 
-    <h1></h1>
+    <div class="ornament">
+        <svg viewBox="0 0 120 60" aria-hidden="true">
+            <path d="M60 30
+                     C60 12, 78 8, 86 20
+                     C88 10, 98 8, 104 16
+                     C98 24, 90 26, 82 24
+                     C80 34, 72 40, 60 42
+                     C48 40, 40 34, 38 24
+                     C30 26, 22 24, 16 16
+                     C22 8, 32 10, 34 20
+                     C42 8, 60 12, 60 30Z"/>
+            <circle cx="60" cy="30" r="4"/>
+        </svg>
+    </div>
 
     <p>
         ویب گاہ زیرِ تعمیر ہے۔<br>
         ان شاء اللہ جلد آپ کی خدمت میں پیش کی جائے گی۔
     </p>
 
+    <div class="ornament-bottom">
+        <svg viewBox="0 0 120 60" aria-hidden="true">
+            <path d="M60 30
+                     C60 12, 78 8, 86 20
+                     C88 10, 98 8, 104 16
+                     C98 24, 90 26, 82 24
+                     C80 34, 72 40, 60 42
+                     C48 40, 40 34, 38 24
+                     C30 26, 22 24, 16 16
+                     C22 8, 32 10, 34 20
+                     C42 8, 60 12, 60 30Z"/>
+            <circle cx="60" cy="30" r="4"/>
+        </svg>
+    </div>
+
     <div class="domain">
         salmanhusaini.com
     </div>
 
 </div>
+
 </body>
 </html>
